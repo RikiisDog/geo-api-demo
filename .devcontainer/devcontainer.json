@@ -1,0 +1,21 @@
+{
+    "name": "js",
+    "service": "js",
+    "workspaceFolder": "/usr/src/app",
+    "dockerComposeFile": "../docker-compose.yml",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "files.autoSave": "afterDelay", // 変更後1秒（1000ミリ秒）後にファイルの自動保存
+                "files.autoSaveDelay": 1000
+            },
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "xabikos.JavaScriptSnippets",
+                "ritwickdey.LiveServer",
+                "esbenp.prettier-vscode",
+                "aeschli.vscode-css-formatter"
+            ]
+        }
+    }
+}

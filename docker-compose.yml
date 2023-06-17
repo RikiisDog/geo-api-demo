@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+    js:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - 8080:8080
+        tty: true
+        volumes:
+            - .:/usr/src/app
+            - /usr/src/app/node_modules
